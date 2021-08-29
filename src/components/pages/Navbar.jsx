@@ -8,13 +8,19 @@ export default function Navbar1() {
     <>
       <Navbar py="3" expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/contactus">Resturent</Navbar.Brand>
+          <Navbar.Brand href="/">Restaurent</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-nav" />
           <Navbar.Collapse id="basic-nav">
             <Nav className="ms-auto">
-              <Nav.Link className="ms-auto">Menu</Nav.Link>
-              <Nav.Link className="ms-auto">Contact Us</Nav.Link>
-              <Nav.Link className="ms-auto">About Us</Nav.Link>
+              <Nav.Link className="ms-auto" href="menu">
+                Menu
+              </Nav.Link>
+              <Nav.Link className="ms-auto" href="contactus">
+                Contact Us
+              </Nav.Link>
+              <Nav.Link className="ms-auto" href="aboutus">
+                About Us
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
