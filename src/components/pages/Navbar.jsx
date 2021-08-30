@@ -1,26 +1,46 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
-import { Container, Nav, NavLink, NavDropdown, Navbar } from "react-bootstrap";
+import { useHistory, NavLink } from "react-router-dom";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 export default function Navbar1() {
   const history = useHistory();
   return (
     <>
-      <Navbar py="3" expand="lg" bg="dark" variant="dark">
+      <Navbar
+        py="3"
+        expand="lg"
+        bg="dark"
+        variant="dark"
+        style={{ position: "sticky", top: 0, zIndex: "1" }}
+      >
         <Container>
           <Navbar.Brand href="/">Restaurent</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-nav" />
           <Navbar.Collapse id="basic-nav">
             <Nav className="ms-auto">
-              <Nav.Link className="ms-auto" href="menu">
+              <NavLink
+                activeStyle={{ color: "#c76f0a" }}
+                className="nav-link"
+                to="/menu"
+              >
                 Menu
-              </Nav.Link>
-              <Nav.Link className="ms-auto" href="contactus">
+              </NavLink>
+
+              <NavLink
+                activeStyle={{ color: "#c76f0a" }}
+                className="nav-link"
+                to="/contactus"
+              >
                 Contact Us
-              </Nav.Link>
-              <Nav.Link className="ms-auto" href="aboutus">
+              </NavLink>
+
+              <NavLink
+                activeStyle={{ color: "#c76f0a" }}
+                className="nav-link"
+                to="/aboutus"
+              >
                 About Us
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

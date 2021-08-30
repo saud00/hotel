@@ -4,7 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function FirstGrid() {
   return (
     <>
-      <Container className="d-sm-flex bg-dark text-light text-center text-sm-start py-4">
+      <Container
+        fluid
+        className="d-sm-flex bg-dark text-light text-center text-sm-start py-4"
+      >
         <div className="my-auto">
           <h1>
             We Serve,
