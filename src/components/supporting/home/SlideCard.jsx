@@ -5,8 +5,13 @@ export default function SlideCard({ val }) {
   return (
     <div>
       <Card style={{ width: "18rem" }}>
-        <div style={{ height: "35vh" }}>
-          <Card.Img fluid variant="top" src={val.imgsrc} />
+        <div style={{ height: "12rem" }}>
+          <Card.Img
+            fluid
+            variant="top"
+            className="w-100 h-100"
+            src={val.imgsrc}
+          />
         </div>
         <Card.Body>
           <Card.Title>Card Title</Card.Title>

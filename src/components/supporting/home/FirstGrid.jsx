@@ -1,12 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+// import background from "./assets/home.jpg";
 
 export default function FirstGrid() {
+  const background = require("../../../styles/home.jpg");
   return (
     <>
       <Container
         fluid
-        className="d-sm-flex bg-dark text-light text-center text-sm-start py-4"
+        className="d-sm-flex text-light text-center text-sm-start py-4"
+        style={{ background: "rgba(0, 0, 0, 0.8)" }}
+        // style={{
+        //   backgroundImage: `url(${background})`,
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: " no-repeat",
+        //   backgroundSize: "cover",
+        //   opacity: 0.3,
+        // }}
       >
         <div className="my-auto">
           <h1>
@@ -28,6 +38,27 @@ export default function FirstGrid() {
         <div className="d-none d-sm-flex my-auto">
           <img className="img-fluid" src="./assets/1.png" alt="img" />
         </div>
+
+        {/* <div
+          style={{
+            height: "100vh",
+            width: "100vw",
+            position: "absolute",
+            top: 0,
+          }}
+        >
+          <img
+            fluid
+            src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/hero-bg.jpg"
+            alt="a"
+            style={{
+              opacity: "0.6",
+              zIndex: -1,
+              height: "100%",
+              width: "100%",
+            }}
+          />
+        </div> */}
       </Container>
 
       <Container className="d-sm-flex bg-warning justify-content-sm-around py-4">
