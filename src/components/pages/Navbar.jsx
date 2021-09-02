@@ -4,6 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 export default function Navbar1() {
   const history = useHistory();
+
   return (
     <>
       <Navbar

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import background from "./assets/home.jpg";
 
 export default function FirstGrid() {
-  const background = require("../../../styles/home.jpg");
+  // const background = require("../../../styles/img/home.jpg");
   return (
     <>
       <Container

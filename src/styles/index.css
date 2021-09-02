@@ -41,3 +41,64 @@ input {
   cursor: pointer;
   max-width: 250px;
 }
+
+.card {
+  width: "18rem";
+  position: "relative";
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  height: 100%;
+  right: 0%;
+  width: 0;
+  overflow: hidden;
+  /* background-color: #cda45e; */
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .img-overlay {
+  width: 100%;
+  /* right: 100%; */
+}
+.overlay-btn {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: black;
+  background-color: cornsilk;
+}
+
+.aboutCont {
+  position: relative;
+}
+.aboutImg {
+  transition: 1s ease-out;
+  border: 5px solid brown;
+}
+.aboutCont:hover .aboutImg .leftBox .RightBox {
+  translate: translateZ(50%, 50%);
+}
+.leftBox {
+  top: 5vh;
+  left: 5vw;
+  border-left: 5px solid sandybrown;
+  border-top: 5px solid sandybrown;
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  transition: 1s ease-out;
+  z-index: 2;
+}
+.RightBox {
+  bottom: 5vh;
+  right: 5vw;
+  border-right: 5px solid sandybrown;
+  border-bottom: 5px solid sandybrown;
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  z-index: 2;
+  transition: 1s ease-out;
+}

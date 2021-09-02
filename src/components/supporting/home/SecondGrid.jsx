@@ -6,21 +6,29 @@ const SlideData = [
   {
     id: 2,
     imgsrc: "./assets/c1.jpg",
+    imgsrc_overlay: "./assets/c11.jpg",
+    title: "Brunch",
     data: "Here is Light salty chineese touch",
   },
   {
     id: 1,
+    imgsrc_overlay: "./assets/c12.jpg",
     imgsrc: "./assets/c2.jpg",
+    title: "Breakfast",
     data: "Try our special breakfast",
   },
   {
     id: 0,
+    imgsrc_overlay: "./assets/c13.jpg",
     imgsrc: "./assets/c3.jpg",
+    title: "Lunch",
     data: "Taste the italian likalu food",
   },
   {
     id: 3,
+    imgsrc_overlay: "./assets/c14.jpg",
     imgsrc: "./assets/c4.jpg",
+    title: "Dinner",
     data: "Mood for some tradional spicy ?",
   },
 ];
