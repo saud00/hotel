@@ -42,18 +42,76 @@ export default function About() {
             </div>
 
             <div className="col-md-6 col-12">
-              <div className="container aboutCont">
+              <div className=" aboutCont">
                 <div className="leftBox"></div>
-                <div>
-                  <img
-                    src={about}
-                    alt="img"
-                    width="100%"
-                    height="100%"
-                    className="aboutImg"
-                  />
+                <div className="aboutImg">
+                  <img src={about} alt="img" width="100%" height="100%" />
                 </div>
                 <div className="RightBox"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Why us
+       */}
+
+      <div className="container-fluid bg-dark p-5">
+        <div className="row">
+          <h6 className="text-light lh-4">WHY US ______</h6>
+          <h3
+            style={{
+              color: "sandybrown",
+              lineHeight: "10vh",
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: "700",
+              fontSize: "36px",
+            }}
+          >
+            Why choose our restaurant
+          </h3>
+        </div>
+        <div className="row">
+          <div className="col-md-4 col-12 ">
+            <div className="card card-body card-effect">
+              <div className="mt-5 mb-4">
+                <h3 style={{ color: "sandybrown", lineHeight: "6vh" }}>01</h3>
+                <h2>
+                  <b>Lorem Ipsum</b>
+                </h2>
+                <p>
+                  Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+                  consectetur ducimus vero placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 col-12 ">
+            <div className="card card-body card-effect">
+              <div className="mt-5 mb-4">
+                <h3 style={{ color: "sandybrown", lineHeight: "6vh" }}>02</h3>
+                <h2>
+                  <b>Lorem Ipsum</b>
+                </h2>
+                <p>
+                  Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+                  consectetur ducimus vero placeat
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 col-12 ">
+            <div className="card card-body card-effect">
+              <div className="mt-5 mb-4">
+                <h3 style={{ color: "sandybrown", lineHeight: "6vh" }}>03</h3>
+                <h2>
+                  <b>Lorem Ipsum</b>
+                </h2>
+                <p>
+                  Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+                  consectetur ducimus vero placeat
+                </p>
               </div>
             </div>
           </div>
