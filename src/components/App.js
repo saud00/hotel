@@ -1,5 +1,7 @@
 import React from "react";
 import Routes from "./Routes";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
     }, 2000);
   }, []);
 
+  AOS.init();
   return (
     <div className="App">
       <Routes />

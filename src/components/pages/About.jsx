@@ -12,10 +12,10 @@ export default function About() {
         backgroundSize: "cover",
         backgroundColor: "black",
         backgroundAttachment: "fixed",
-        height: "100vh",
+        height: "100%",
       }}
     >
-      <div className="bg-brown h-100 w-100  text-white ">
+      <div className="bg-brown h-100 w-100 mb-4 text-white ">
         <div className="text-center">
           <h1>About Us</h1>
         </div>
@@ -57,7 +57,11 @@ export default function About() {
       {/* Why us
        */}
 
-      <div className="container-fluid bg-dark p-5">
+      <div
+        className="container-fluid bg-dark p-5"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div className="row">
           <h6 className="text-light lh-4">WHY US ______</h6>
           <h3

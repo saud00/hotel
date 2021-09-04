@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
+import Events from "./pages/Events";
 import Homepage from "./pages/Homepage";
 import Menu from "./pages/Menu";
 import Navbar1 from "./pages/Navbar";
@@ -27,6 +28,7 @@ export default function Routes() {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/aboutus" component={About} />
           <Route exact path="/contactus" component={ContactUs} />
+          <Route exact path="/events" component={Events} />
           <Route component={error} />
         </Switch>
       </>

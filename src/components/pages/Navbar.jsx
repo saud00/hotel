@@ -30,6 +30,14 @@ export default function Navbar1() {
               <NavLink
                 activeStyle={{ color: "#c76f0a" }}
                 className="nav-link"
+                to="/events"
+              >
+                Events
+              </NavLink>
+
+              <NavLink
+                activeStyle={{ color: "#c76f0a" }}
+                className="nav-link"
                 to="/contactus"
               >
                 Contact Us
