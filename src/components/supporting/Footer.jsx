@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="contanier py-5 bg-dark">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <h3 className="text-warning" >Restaurent</h3>
+                        <h3 className="text-warning typo" >Restaurent</h3>
                         <p className=" text-light">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
                         <div className="justify-content-center my-5">
                         <div>

@@ -15,7 +15,7 @@ export default function Navbar1() {
         style={{ position: "sticky", top: 0, zIndex: "1" }}
       >
         <Container>
-          <Navbar.Brand href="/">Restaurent</Navbar.Brand>
+          <Navbar.Brand className="typo font" href="/"><h2>Restaurent</h2> </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-nav" />
           <Navbar.Collapse id="basic-nav">
             <Nav className="ms-auto">
