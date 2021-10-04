@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef, useEffect} from "react";
 
 const data = [
   {
@@ -36,22 +36,37 @@ const data = [
 ]
 
 export default function Menu() {
-  const [select, setSelect]= React.useState(0)
+  const [select, setSelect]= React.useState(0),
+  prevRef = useRef(null), first = useRef(null),
+
+   clickTitle=(e,ind)=>{
+   prevRef.current.style.color = "inherit"
+    e.target.style.color = "coral"
+    prevRef.current = e.target
+    setSelect(ind)
+  }
+
+  useEffect(() => {
+    prevRef.current = first.current;
+  }, [])
+
   return <div className="container mt-5">
     <div className="text-center">
       <h3 className="typo">Check our tasty <span className="text-warning">Menu</span> </h3>
       <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
     </div>
 
-    <div className="container d-block d-md-flex w-100">
+    <div className="container d-block my-5 d-md-flex w-100">
       <div className="row w-100">
 
-        <div className="col-12 col-md-3 d-flex flex-column justify-content-around bg-warning ">
+        <div className="col-12 col-md-3 d-flex flex-column justify-content-around parent ">
       {data.map((val, ind)=>{
         return(
-         <div onClick={()=>{setSelect(ind)}}>
-         {val.title}</div>
-       )})}
+         <div ref={first} onClick={(e)=>{clickTitle(e,ind)}}>
+          {val.title}
+         </div>
+       )
+       })}
        </div>
 
       <div className="col-12 col-md-6 d-block ">
@@ -60,8 +75,8 @@ export default function Menu() {
           return(
             <div style={{textAlign:"justify"}} >
             <h3 className="typo lh-5 my-4" >{val.heading}</h3>
-            <div>{val.p1}</div>
-            <div>{val.p2}</div>
+            <div className="lead">{val.p1}</div>
+            <div className="lead">{val.p2}</div>
             </div>
             )
         })}
@@ -72,7 +87,7 @@ export default function Menu() {
           if(ind===select)
           return(
             <div className="w-100 h-100">
-            <img src={`${val.img}`} height="100%" width="100%" alt="img" />
+            <img src={`${val.img}`} height="80%" width="100%" alt="img" />
             </div>
             )
         })}</div> 

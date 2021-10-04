@@ -30,20 +30,6 @@ input {
   width: 85%;
 }
 
-.button {
-  font-family: monospace;
-  font-size: 10pt;
-  color: black;
-  background-color: buttonface;
-  text-align: center;
-  padding: 2px 6px 3px;
-  border-width: 2px;
-  border-style: outset;
-  border-color: buttonface;
-  cursor: pointer;
-  max-width: 250px;
-}
-
 .card {
   width: "18rem";
   position: "relative";
@@ -134,4 +120,20 @@ input {
 .social-logo{color:white}
 .social-logo:hover{color:#c76f0a }
 
+
+.parent{color:black}
+.parent:hover > * {
+  opacity: 0.5;
+}
+.parent:hover > *:hover {
+  color:#c76f0a;
+  opacity: 1;
+}
+
+
 .typo{font-family: "Satisfy", sans-serif;}
+
+.form-cont{
+  background: -webkit-linear-gradient(left, rgba(0,168,255,0.5), rgba(185,0,255,0.5));
+
+}
