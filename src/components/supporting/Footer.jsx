@@ -6,8 +6,8 @@ import { Button } from 'react-bootstrap';
 export default function Footer() {
 
     return (
-        <div >
-            <div className="contanier py-5 bg-dark">
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div className="contanier py-5 bg-dark"  >
                 <div className="row">
                     <div className="col-12 text-center">
                         <h3 className="text-warning typo" >Restaurent</h3>

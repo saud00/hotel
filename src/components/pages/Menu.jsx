@@ -50,10 +50,9 @@ export default function Menu() {
     prevRef.current = first.current;
   }, [])
 
-  return <div className="container mt-5">
-    <div className="text-center">
-      <h3 className="typo">Check our tasty <span className="text-warning">Menu</span> </h3>
-      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+  return <div className="container ">
+    <div className="text-center pt-5 pb-3 bg-dark">
+      <h2 className="typo text-light">Check our tasty <span className="text-warning">Menu</span> </h2>
     </div>
 
     <div className="container d-block my-5 d-md-flex w-100">
@@ -62,7 +61,7 @@ export default function Menu() {
         <div className="col-12 col-md-3 d-flex flex-column justify-content-around parent ">
       {data.map((val, ind)=>{
         return(
-         <div ref={first} onClick={(e)=>{clickTitle(e,ind)}}>
+         <div ref={first} onClick={(e)=>{clickTitle(e,ind)}} style={{cursor:"pointer"}}>
           {val.title}
          </div>
        )
